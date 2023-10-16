@@ -1,2 +1,2 @@
-# DNA_Storage_Resource_Page
-Resource page for Data Storage and security, containing all new research papers on the concerned topic.
+# DNA-Computing-Project
+Resource page for DNA based Computing, containing all data on the concerned topic.
