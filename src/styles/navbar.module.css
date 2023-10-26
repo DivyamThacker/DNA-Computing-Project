@@ -1,0 +1,51 @@
+.sidebar{
+    background-color: black;
+    opacity: 0.95;
+    color: white;
+    position: absolute;
+    top:55px;
+    left: -10px;
+    width: 350px;
+    height:92vh;
+    overflow-y: auto;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:80px;
+    justify-content:flex-start;
+    font-size: large;
+}
+
+    .item:hover{
+        background-color: rgb(29, 29, 29);
+    }
+
+ .item :nth-child(1){
+     padding-right: 20px;
+     padding-left: 2px;
+ }
+
+ .hide{
+    display: none;
+ }
+
+ .navbar{
+    color: white;
+    background-color: #3f51b5!important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:60px;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+ }
+
+ .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
