@@ -1,32 +1,38 @@
 export const data = [
   {
     Type: "Event",
-    "Event Name":
-      "The Sequence Reconstruction Problem and Its Connection to DNA Storage",
-    Organization: "Yin-Yang (0 and 1) Online Seminar, Beihang University",
-    Link: "https://dna.interiaweb.com/talks/",
-  },
-  {
+"Event Name":
+  "29th International Conference on DNA Computing and Molecular Programming",
+Organization: "Tohoku University, Sendai, Japan",
+Link: "https://www.dagstuhl.de/dagpub/978-3-95977-297-6",
+},
+{
     Type: "Event",
-    "Event Name":
-      "DNA-based Storage Systems: The Past, The Present, and Looking into The Future",
-    Organization:
-      "Toga Innovation Summit: Storage Technology Workshop (Toga Networks)",
-    Link: "https://dna.interiaweb.com/talks/",
-  },
-  {
+"Event Name":
+  "28th International Conference on DNA Computing and Molecular Programming",
+Organization: " University of New Mexico, Albuquerque",
+Link: "https://www.dagstuhl.de/dagpub/978-3-95977-253-2",
+},
+{
     Type: "Event",
-    "Event Name":
-      "DNA-Storalator: End-to-End DNA Storage Simulator with Reconstruction Algorithms",
-    Organization:
-      "The 1st International Symposium of Biological Computation, Zhejiang Lab",
-    Link: "https://dna.interiaweb.com/talks/",
-  },
-  {
+"Event Name":
+  "27th International Conference on DNA Computing and Molecular Programming",
+Organization: ", Oxford, UK",
+Link: "https://www.dagstuhl.de/dagpub/978-3-95977-205-1",
+},
+{
     Type: "Event",
-    "Event Name":
-      "Ultra-dense data storage and extreme parallelism with electronic-molecular systems",
-    Organization: "Microsoft",
-    Link: "https://youtu.be/tRdqx_aG4w0",
-  },
+"Event Name":
+  "26th International Conference on DNA Computing and Molecular Programming",
+Organization: "Oxford, UK",
+Link: "https://www.dagstuhl.de/dagpub/978-3-95977-163-4",
+},
+{
+    Type: "Event",
+"Event Name":
+  "DNA Computing and Molecular Programming - 25th International Conference",
+Organization: "Seattle, WA, USA",
+Link: "https://doi.org/10.1007/978-3-030-26807-7",
+},
 ];
+export default data;

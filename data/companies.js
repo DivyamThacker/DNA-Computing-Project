@@ -242,8 +242,7 @@ export const data = [
     Type: "Company",
     Organization: "IBM",
     path: "/company_logo/ibm.png",
-    Description:
-      "IBM is a leading global hybrid cloud and AI, and consulting services provider, helping clients in more than 175 countries capitalize on insights from their data, streamline business processes, reduce costs and gain the competitive edge in their industries. Nearly 3,800 government and corporate entities in critical infrastructure areas such as financial services, telecommunications and healthcare rely on IBM\u2019s hybrid cloud platform and Red Hat OpenShift to affect their digital transformations quickly, efficiently, and securely. IBM\u2019s breakthrough innovations in AI, quantum computing, industry-specific cloud solutions and consulting services deliver open and flexible options to our clients. IBM also offers a full range of Active Archive, unstructured data storage and tape storage products including drives, autoloaders, libraries, virtual tape systems, Archive software and Hybrid solutions. All of this is backed by IBM\u2019s legendary commitment to trust, transparency, responsibility, inclusivity, and service. For more information, visit www.ibm.com.",
+    Description:"IBM is a leading global hybrid cloud and AI, and consulting services provider, helping clients in more than 175 countries capitalize on insights from their data, streamline business processes, reduce costs and gain the competitive edge in their industries. Nearly 3,800 government and corporate entities in critical infrastructure areas such as financial services, telecommunications and healthcare rely on IBM\u2019s hybrid cloud platform and Red Hat OpenShift to affect their digital transformations quickly, efficiently, and securely. IBM\u2019s breakthrough innovations in AI, quantum computing, industry-specific cloud solutions and consulting services deliver open and flexible options to our clients. IBM also offers a full range of Active Archive, unstructured data storage and tape storage products including drives, autoloaders, libraries, virtual tape systems, Archive software and Hybrid solutions. All of this is backed by IBM\u2019s legendary commitment to trust, transparency, responsibility, inclusivity, and service. For more information, visit www.ibm.com.",
   },
   {
     Type: "Company",
@@ -338,3 +337,4 @@ export const data = [
       "Iridia helps customers solve their complex data storage needs with the world\u2019s most advanced silicon-based molecular foundry. This transformational approach enables an integrated way to write, store and read DNA at scales needed for archival storage applications. This innovation enables you to write and store information at unprecedented density, with low cost, and in an environmentally sustainable way. We\u2019re on a mission to help preserve and safeguard the world\u2019s information.",
   },
 ];
+export default data;

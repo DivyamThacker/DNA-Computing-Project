@@ -15,3 +15,5 @@ export const data = [
         "Link": "https://www.guptalab.org/dnacloud/"
     },
 ];
+
+export default data;

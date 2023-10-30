@@ -1,0 +1,71 @@
+  
+  .container{
+    width: 1500px;
+    margin : 10px 20px;
+    padding: 6px;
+    display: grid;
+    grid-template-columns: 50px 500px 300px repeat(4, 200px) 100px;
+    grid-template-rows: 50px;
+    gap: 10px 20px;
+  }
+
+  .grid_item{
+      padding: 5px;
+  }
+  .body{
+    background-color: rgb(234, 229, 229);
+    width: 1480px;
+    margin : 10px 20px;
+    position:absolute;
+    z-index: -1;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    border: solid black 2px;
+    border-radius: 10px;
+    height: 580px;
+}
+.checkbox{
+  width:15px;
+  height:15px;
+}
+.header{
+  background-color:  rgb(180, 172, 172);
+  width:1870px;
+}
+
+/* Tooltip container */
+.tooltip {
+position: relative;
+display: inline-block;
+border-bottom: 1px dotted black;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 120px;
+background-color: black;
+color: #fff;
+text-align: center;
+padding: 5px 0;
+border-radius: 6px;
+
+/* Position the tooltip text - see examples below! */
+position: absolute;
+z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+visibility: visible;
+width: 300px;
+padding:5px;
+}
+
+.prevent_select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}

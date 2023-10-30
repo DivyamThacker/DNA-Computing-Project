@@ -75,7 +75,7 @@ const navigationItems = [
 ];
 
 const Navbar = () => {
-  const [toggleDrawer, setToggleDrawer] = useState(true);
+  const [toggleDrawer, setToggleDrawer] = useState(false);
   return (
     <>
       <div className={`${styles.navbar} ${styles.sticky}`}>

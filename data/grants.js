@@ -110,3 +110,5 @@ export const data = [
         "Link": "https://www.labiotech.eu/trends-news/biomemory-raises-funds-advance-dna-data-storage-solution/"
     }
 ]
+
+export default data;
