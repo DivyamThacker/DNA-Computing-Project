@@ -163,7 +163,7 @@ export const data = [
   {
     Type: "Company",
     Organization: "DNAalgo",
-    path: "/company_logo/NAalgo-logo.jpg",
+    path: "/company_logo/DNAalgo-logo.jpg",
     Description:
       "DNAalgo is a start-up located in the Milano area, in the north of Italy. A team of veterans of the storage industry, including mathematicians, data scientists, and engineers is paving the way for the application of the most sophisticated tricks of the Information Theory to the DNA storage. ",
   },
@@ -184,7 +184,7 @@ export const data = [
   {
     Type: "Company",
     Organization: "ICOS Research Group \u2013 Newcastle University",
-    path: "/company_logo/",
+    path: "/company_logo/ico2s.png",
     Description:
       "We conduct research at the interface of computing science and complex biosystems. Our projects range from machine learning for personalized medicine, CAD/CAM tools development for engineering biology and nanotechnology, to the formulation of new methods for cloud-based workflows for very large data analytics. Our group keeps state-of-the-art synthetic biology and DNA/RNA nanotechnology laboratories where we conduct research on DNA/RNA computing (e.g. via strand displacement systems), in vivo computation, DNA/RNA origami, and long-term strategic research on DNA storage and data structures (https://endroids.ico2s.org).",
   },
