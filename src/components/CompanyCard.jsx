@@ -12,10 +12,6 @@ import { useState } from "react";
 const CompanyCard = (props) => {
   const [dialogOpen, setDialog] = useState(false);
 
-  const handleDialog = () => {
-    setDialog(!dialogOpen);
-  };
-
   return (
     <Card className="mt-10 w-96 border-4 ">
       <CardHeader color="blue-gray" className="relative h-45">

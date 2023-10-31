@@ -2,37 +2,37 @@ export const data = [
     {
         "Type": "Project",
         "Title": "Localized Hybridization Circuits",
-        "Funding Agency": "NA",
-        "Organization": "Springer",
+        "Funding Agency": "Microsoft",
+        "Organization": "Department of Computer Science, Duke University",
         "Link": "https://www.microsoft.com/en-us/research/publication/localized-hybridization-circuits/"
     },
     {
         "Type": "Project",
-        "Title": "A spatially localized architecture for fast and modular DNA computing",
-        "Funding Agency": "NA",
-        "Organization": "Nature Publishing Group",
-        "Link": "https://www.microsoft.com/en-us/research/publication/spatially-localized-architecture-fast-modular-dna-computing/"
+        "Title": "Computationally Active DNA Nanostructures",
+        "Funding Agency": "EXCELLENT SCIENCE - European Research Council (ERC)",
+        "Organization": "NATIONAL UNIVERSITY OF IRELAND MAYNOOTH",
+        "Link": "https://cordis.europa.eu/project/id/772766"
     },
     {
         "Type": "Project",
-        "Title": "Automated, Constraint-Based Analysis of Tethered DNA Nanostructures",
-        "Funding Agency": "NA",
-        "Organization": "Springer",
-        "Link": "https://www.microsoft.com/en-us/research/publication/automated-constraint-based-analysis-tethered-dna-nanostructures/"
+        "Title": "DNA-based Infrastructure for Storage and Computation",
+        "Funding Agency": "The European Innovation Council (EIC)",
+        "Organization": "NATIONAL UNIVERSITY OF IRELAND MAYNOOTH",
+        "Link": "https://cordis.europa.eu/project/id/101115422"
     },
     {
         "Type": "Project",
-        "Title": "Synthesizing and tuning chemical reaction networks with specified behaviours",
-        "Funding Agency": "NA",
-        "Organization": "Springer",
-        "Link": "https://www.microsoft.com/en-us/research/publication/synthesizing-tuning-chemical-reaction-networks-specified-behaviours/"
+        "Title": "Molecular Computing and Intractable Problems",
+        "Funding Agency": "Human resources and Mobility in the specific programme for research, technological development and demonstration Structuring the European Research Area under the Sixth Framework Programme ",
+        "Organization": "UNIVERSITAT ROVIRA I VIRGILI",
+        "Link": "https://cordis.europa.eu/project/id/21666"
     },
     {
         "Type": "Project",
-        "Title": "Functional Analysis of Large-scale DNA Strand Displacement Circuits",
-        "Funding Agency": "NA",
-        "Organization": "Springer",
-        "Link": "https://www.microsoft.com/en-us/research/publication/functional-analysis-of-large-scale-dna-strand-displacement-circuits/"
+        "Title": "DNAPC4ImunoMol",
+        "Funding Agency": "Marie Skłodowska-Curie Actions (MSCA)",
+        "Organization": "JOHANNES GUTENBERG-UNIVERSITAT MAINZx",
+        "Link": "https://cordis.europa.eu/project/id/101111348"
     },
 ];
 
