@@ -34,6 +34,20 @@ export const data = [
         "Organization": "JOHANNES GUTENBERG-UNIVERSITAT MAINZx",
         "Link": "https://cordis.europa.eu/project/id/101111348"
     },
+    {
+        "Type": "Project",
+        "Title": "BIOMOLECULAR_COMP",
+        "Funding Agency": "Specific programme: Ideas implementing the Seventh Framework Programme of the European Community for research, technological development and demonstration activities (2007 to 2013)",
+        "Organization": "WEIZMANN INSTITUTE OF SCIENCE",
+        "Link": "https://cordis.europa.eu/project/id/233047"
+    },
+    {
+        "Type": "Project",
+        "Title": "Dna computing in vivo",
+        "Funding Agency": "Programme for research, technological development and demonstration on Improving the human research potential and the socio-economic knowledge base (1998-2002)",
+        "Organization": "LEIDEN UNIVERSITY",
+        "Link": "https://cordis.europa.eu/project/id/HPMF-CT-2001-01373"
+    }
 ];
 
 export default data;

@@ -6,11 +6,10 @@ import styles from "./page.module.css";
 const ProjectsPage = () => {
   return (
     <div>
-      <h1 className="ml-10">Projects Page </h1>
+      <h1 className="ml-10 mt-3">Projects Page </h1>
       <div className={`${styles.body}`}>
         <div className={`${styles.container} ${styles.header}`}>
           <div className={`${styles.grid_item}`}>
-            <input type="checkbox" className={`${styles.checkbox}`} />
           </div>
           <div className={`${styles.grid_item}`}>Title</div>
           <div className={`${styles.grid_item}`}>Type</div>

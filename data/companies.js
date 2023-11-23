@@ -9,7 +9,7 @@ const data = [
   {
       Type: "Company",
       Organization: "Oxford Nanopore Technologies",
-      path: "/company_logo/oxford_Nanopore.png",
+      path: "/company_logo/oxford_Nanopore.jpg",
       Description:
         "Oxford Nanopore Technologies plc is a UK-based company which develops and sells nanopore sequencing products for the direct, electronic analysis of single molecules.", 
   },

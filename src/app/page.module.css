@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Bree+Serif&family=Hubballi&family=Lora&display=swap");
 .main {
   display: flex;
   flex-direction: column;
@@ -5,10 +6,9 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  position:absolute;
+  position: absolute;
   z-index: -1;
 }
-
 
 .description {
   display: inherit;
@@ -100,7 +100,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -205,6 +205,47 @@
   }
 }
 
+/* custom css for home page */
+
+.gridContainer {
+  /* margin-top: 40px; */
+  width: 97%;
+  margin: 10px 20px;
+  padding: 6px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 250px 750px;
+  gap: 7rem 4rem;
+}
+.gridItem {
+  /* background-color: rgba(225, 225, 225, 0.2); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 10px;
+}
+
+.gridLeftItem {
+  font-size: 1.2rem;
+  font-family: "Lora", serif;
+  text-align: center;
+  padding:1rem;
+  border-bottom: 1px solid rgb(133, 133, 227);
+}
+
+.gridRightItem {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Lora", serif;
+  margin-bottom: 1.7rem;
+  background-color: rgba(225, 225, 225, 0.3);
+  padding:1rem;
+}
+
+.gridPara{
+  font-weight: lighter;
+  opacity:0.5;
+  padding:1rem;
+}
+
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
@@ -230,4 +271,3 @@
     transform: rotate(0deg);
   }
 }
-

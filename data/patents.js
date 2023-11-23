@@ -23,7 +23,21 @@ export const data = [
         "Title": "Using machine-learning to perform linear regression on a DNA-computing platform",
         "Organization / Authors": "Baughman, Aaron K.Mcdonough, JenniferSanthar, Sathya Trim, Craig M.",
         "Link": "https://www.patentguru.com/US10388404B2"
-    }           
+    },
+    {
+        "Title": "METHOD FOR MOLECULAR COMPUTING",
+        "Organization /Authors": "King, Ross D Korovin, Konstantin",
+        "Link": "https://www.patentguru.com/EP4207001A1"
+    },
+    {
+        "Title": "Computing device",
+        "Organization /Authors": "Esteves-veríssimo, Paulo Völp, Marcus Decouchant, Jérémie Fernandes, Maria",
+        "Link": "https://www.patentguru.com/US11657899B2"
+    },
+    {
+        "Title": "Using machine-learning to perform linear regression on a DNA-computing platform",
+        "Organization /Authors": "Baughman, Aaron K.Mcdonough, Jennifer Santhar, Sathya Trim, Craig M.",
+        "Link": "https://www.patentguru.com/US10388404B2"
+    }    
 ];
-
 export default data;

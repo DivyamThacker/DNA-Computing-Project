@@ -32,10 +32,11 @@
  .hide{
     display: none;
  }
-
+ /* #3f51b5 */
+ /* #132E35 */
  .navbar{
-    color: white;
-    background-color: #3f51b5!important;
+     color: white;
+     background-color:rgb(25,62,110) !important; 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,6 +44,7 @@
     justify-content: space-between;
     padding: 10px;
     width: 100%;
+    margin-bottom: 0px;
  }
 
  .sticky {

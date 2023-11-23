@@ -104,12 +104,14 @@ const Navbar = () => {
         <a href="/">
           <h2>DNA Computing Resource Page</h2>
         </a>
+        <a href="https://www.guptalab.org/">
         <Image
           src="/guptalablogo.jpg"
           width={39}
           height={39}
           alt="Gupta Lab Logo"
         />
+        </a>
 
         
       </div>
