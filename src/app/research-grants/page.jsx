@@ -11,7 +11,7 @@ export default function GrantsPage(){
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        process.env.NEXT_PUBLIC_URL + "api/Grants"
+        process.env.NEXT_PUBLIC_VERCEL_URL + "api/Grants"
       );
       const data = await response.json();
       setData(data.result);

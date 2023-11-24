@@ -20,7 +20,7 @@ export default function ResearchPapersPage() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        process.env.NEXT_PUBLIC_URL + "api/ResearchPapers"
+        process.env.NEXT_PUBLIC_VERCEL_URL + "api/ResearchPapers"
       );
       const data = await response.json();
       setData(data.result);

@@ -11,7 +11,7 @@ export default function YoutubePage(){
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        process.env.NEXT_PUBLIC_URL + "api/YoutubeContent"
+        process.env.NEXT_PUBLIC_VERCEL_URL + "api/YoutubeContent"
       );
       const data = await response.json();
       setData(data.result);

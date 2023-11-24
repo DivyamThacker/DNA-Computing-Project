@@ -37,7 +37,7 @@ export default function CompaniesPage() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        process.env.NEXT_PUBLIC_URL + "api/Companies"
+        process.env.NEXT_PUBLIC_VERCEL_URL + "api/Companies"
       );
       const data = await response.json();
       setData(data.result);

@@ -11,7 +11,7 @@ export default function ProjectsPage(){
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        process.env.NEXT_PUBLIC_URL + "api/Projects"
+        process.env.NEXT_PUBLIC_VERCEL_URL + "api/Projects"
       );
       const data = await response.json();
       setData(data.result);

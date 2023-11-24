@@ -11,7 +11,7 @@ export default function PatentsPage(){
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        process.env.NEXT_PUBLIC_URL + "api/Patents"
+        process.env.NEXT_PUBLIC_VERCEL_URL + "api/Patents"
       );
       const data = await response.json();
       setData(data.result);
