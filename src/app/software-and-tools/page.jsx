@@ -5,7 +5,7 @@ import SoftwareItem from "../../components/SoftwareItem";
 import styles from "./page.module.css";
 import { useState, useEffect } from "react";
 
-export default function functionSoftwarePage(){
+export default function SoftwarePage(){
   const [data, setData] = useState([]);
 
   useEffect(() => {

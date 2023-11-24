@@ -8,18 +8,29 @@ import {
 } from "@material-tailwind/react";
 import styles from "../app/companies/page.module.css";
 import { useState } from "react";
+import Image from "next/image";
 
 const CompanyCard = (props) => {
   const [dialogOpen, setDialog] = useState(false);
 
   return (
-    <Card className="mt-10 w-96 border-4 "  style={{display:"flex", flexDirection:"column"}}>
+    <Card
+      className="mt-10 w-96 border-4 "
+      style={{ display: "flex", flexDirection: "column" }}
+    >
       <CardHeader color="blue-gray" className="relative h-45">
-        <img
+        {/* <img
           src={props.path}
           alt="Company Logo"
           className="px-2"
           style={{ width: "370px", height: "180px" }}
+        /> */}
+        <Image
+          src={props.path}
+          alt="Company Logo"
+          className="px-2"
+          width={370}
+      height={180}
         />
       </CardHeader>
       <CardBody>
