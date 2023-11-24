@@ -1,9 +1,25 @@
+"use client"
 import React from "react";
 import data from "@data/projects";
 import ProjectItem from "../../components/ProjectItem";
 import styles from "./page.module.css";
+import { useState, useEffect } from "react";
 
-const ProjectsPage = () => {
+export default function ProjectsPage(){
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(
+        process.env.NEXT_PUBLIC_URL + "api/Projects"
+      );
+      const data = await response.json();
+      setData(data.result);
+      console.log("data : ", data);
+    };
+
+    fetchData();
+  }, []);
   return (
     <div>
       <h1 className="ml-10 mt-3">Projects Page </h1>
@@ -24,7 +40,7 @@ const ProjectsPage = () => {
               idx={idx}
               type={item["Type"]}
               title={item["Title"]}
-              agency={item["Funding Agency"]}
+              agency={item["FundingAgency"]}
               organization={item["Organization"]}
               link={item["Link"]}
             />
@@ -35,4 +51,3 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;

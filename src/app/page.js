@@ -41,16 +41,16 @@ export default function Home() {
           >
             DNA Computing
           </h1>
-          <p style={{ fontFamily: "'Lora', serif" }}>
+          <p style={{ fontFamily: "'Lora', serif", fontSize: "1.5rem" }}>
             Conventional computers simply cannot keep pace with modern data
             creation.
           </p>
-          <p style={{ fontFamily: "'Lora', serif" }}>
+          <p style={{ fontFamily: "'Lora', serif", fontSize: "1.5rem" }}>
             {" "}
             DNA Computing is an emerging branch of unconventional computing that
             performs{" "}
           </p>
-          <p style={{ fontFamily: "'Lora', serif" }}>
+          <p style={{ fontFamily: "'Lora', serif", fontSize: "1.5rem" }}>
             computations using biological molecules, rather than traditional
             electronic computing.
           </p>

@@ -1,9 +1,25 @@
+"use client"
 import React from "react";
-import data from "@data/courses";
+// import data from "@data/courses";
 import CourseItem from "../../components/CourseItem";
 import styles from "./page.module.css";
+import { useState, useEffect } from "react";
 
-const CoursesPage = ()=>{
+export default function CoursesPage(){
+const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(
+        process.env.NEXT_PUBLIC_URL + "api/Courses"
+      );
+      const data = await response.json();
+      setData(data.result);
+      console.log("data : ", data);
+    };
+
+    fetchData();
+  }, []);
     return (
         <div>
           <h1 className="ml-10 mt-3">Courses Page </h1>
@@ -33,4 +49,3 @@ const CoursesPage = ()=>{
       );
     };
 
-export default CoursesPage;

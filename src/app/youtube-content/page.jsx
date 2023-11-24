@@ -1,9 +1,25 @@
+"use client"
 import React from "react";
-import data from "@data/youtube";
+// import data from "@data/youtube";
 import YoutubeItem from "../../components/YoutubeItem";
 import styles from "./page.module.css";
+import { useState, useEffect } from "react";
 
-const YoutubePage = () => {
+export default function YoutubePage(){
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(
+        process.env.NEXT_PUBLIC_URL + "api/YoutubeContent"
+      );
+      const data = await response.json();
+      setData(data.result);
+      console.log("data : ", data);
+    };
+
+    fetchData();
+  }, []);
   return (
     <div>
       <h1 className="ml-10 mt-3">Youtube Content Page </h1>
@@ -33,4 +49,3 @@ const YoutubePage = () => {
   );
 };
 
-export default YoutubePage;

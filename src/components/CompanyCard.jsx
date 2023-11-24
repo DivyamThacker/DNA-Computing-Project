@@ -13,7 +13,7 @@ const CompanyCard = (props) => {
   const [dialogOpen, setDialog] = useState(false);
 
   return (
-    <Card className="mt-10 w-96 border-4 ">
+    <Card className="mt-10 w-96 border-4 "  style={{display:"flex", flexDirection:"column"}}>
       <CardHeader color="blue-gray" className="relative h-45">
         <img
           src={props.path}

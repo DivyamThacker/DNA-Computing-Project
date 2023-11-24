@@ -1,15 +1,41 @@
-"use client";
-import React from "react";
-import data from "@data/articles_papers";
+"use client"
+// import data from "@data/articles_papers";
+import axios from "axios";
 import ArticleItem from "../../components/ArticleItem";
 import styles from "./page.module.css";
-const ResearchPapersPage = () => {
+import React, {useState, useEffect} from "react";
 
+// async function getData() {
+//   const res = await fetch(process.env.URL+'api/ResearchPapers')
+//   if (!res.ok) {
+//     throw new Error('Failed to fetch data')
+//   }
+//   return res.json();
+// }
+
+export default function ResearchPapersPage() {
+  // const {result : data} = await getData();
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(
+        process.env.NEXT_PUBLIC_URL + "api/ResearchPapers"
+      );
+      const data = await response.json();
+      setData(data.result);
+      console.log("data : ", data);
+    };
+
+    fetchData();
+  }, []);
   return (
     <div>
+    <div style={{display:"flex",justifyContent:"center"}}>
       <h1 className={`ml-10 ${styles.prevent_select} mt-3`} >
-        Articles and Papers Page{" "}
+        Articles and Papers {" "}
       </h1>
+    </div>
       <div className={`${styles.body}`}>
         <div className={`${styles.container} ${styles.header}`}>
           <div className={`${styles.grid_item}`}></div>
@@ -31,7 +57,7 @@ const ResearchPapersPage = () => {
               title={item["Title"]}
               topics={item["Topics"]}
               authors={item["Authors"]}
-              publishedDate={item["Published Date"]}
+              publishedDate={item["PublishedDate"]}
               link={item["Link"]}
             />
           );
@@ -40,5 +66,3 @@ const ResearchPapersPage = () => {
     </div>
   );
 };
-
-export default ResearchPapersPage;

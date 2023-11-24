@@ -1,9 +1,25 @@
+"use client"
 import React from "react";
-import data from "@data/softwares";
+// import data from "@data/softwares";
 import SoftwareItem from "../../components/SoftwareItem";
 import styles from "./page.module.css";
+import { useState, useEffect } from "react";
 
-const SoftwarePage = () => {
+export default function functionSoftwarePage(){
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(
+        process.env.NEXT_PUBLIC_URL + "api/Softwares"
+      );
+      const data = await response.json();
+      setData(data.result);
+      console.log("data : ", data);
+    };
+
+    fetchData();
+  }, []);
   return (
     <div>
       <h1 className="ml-10 mt-3">Software and Tools Page </h1>
@@ -31,4 +47,3 @@ const SoftwarePage = () => {
   );
 };
 
-export default SoftwarePage;
