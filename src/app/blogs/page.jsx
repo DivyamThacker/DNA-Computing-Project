@@ -20,7 +20,7 @@ export default function BlogsPage() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        process.env.NEXT_PUBLIC_VERCEL_URL + "api/Blogs"
+        "/api/Blogs"
       );
       const data = await response.json();
       setData(data.result);

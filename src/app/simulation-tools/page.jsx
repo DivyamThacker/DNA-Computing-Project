@@ -11,7 +11,7 @@ export default function ToolsPage(){
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        process.env.NEXT_PUBLIC_VERCEL_URL + "api/SimulationTools"
+        "/api/SimulationTools"
       );
       const data = await response.json();
       setData(data.result);

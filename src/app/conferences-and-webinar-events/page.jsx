@@ -11,7 +11,7 @@ const EventsPage = ()=>{
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        process.env.NEXT_PUBLIC_VERCEL_URL + "api/Events"
+        "/api/Events"
       );
       const data = await response.json();
       setData(data.result);
