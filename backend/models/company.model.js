@@ -16,6 +16,10 @@ const companySchema = new mongoose.Schema({
   path :{type : String,
     required: true,
   },
+  Link :{type : String,
+    required: true,
+  },
+  
 });
 
 export default companySchema;

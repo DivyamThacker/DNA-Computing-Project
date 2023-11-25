@@ -5,10 +5,6 @@ const patentSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  type: {
-    type: String,
-    required: true,
-  },
   Organization: {
     type: String,
     required: true,

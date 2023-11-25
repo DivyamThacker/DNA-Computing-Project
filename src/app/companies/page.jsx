@@ -41,7 +41,7 @@ export default function CompaniesPage() {
       );
       const data = await response.json();
       setData(data.result);
-      console.log("data : ", data);
+      console.log("data : ", data.result);
     };
 
     fetchData();
@@ -50,6 +50,7 @@ export default function CompaniesPage() {
   return (
     <div>
       <h1 className="ml-10 mt-3"> Companies Working on DNA Computing </h1>
+      <div style={{position:"absolute", right:"-1100px", top:"10px"}}>Total Companies : {data.length}</div>
       <div className={`${styles.container}`}>
         {data.map((item, idx) => {
           return (
@@ -60,6 +61,7 @@ export default function CompaniesPage() {
               description={item.Description}
               organization={item.Organization}
               type={item.Type}
+              link={item.Link}
             />
           );
         })}

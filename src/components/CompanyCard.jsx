@@ -9,16 +9,16 @@ import {
 import styles from "../app/companies/page.module.css";
 import { useState } from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 const CompanyCard = (props) => {
   const [dialogOpen, setDialog] = useState(false);
 
   return (
     <Card
       className="mt-10 w-96 border-4 "
-      style={{ display: "flex", flexDirection: "column" }}
+      style={{ display: "flex", flexDirection: "column" , }}
     >
-      <CardHeader color="blue-gray" className="relative h-45">
+      <CardHeader color="blue-gray" className="relative h-45" >
         {/* <img
           src={props.path}
           alt="Company Logo"
@@ -30,7 +30,8 @@ const CompanyCard = (props) => {
           alt="Company Logo"
           className="px-2"
           width={370}
-      height={180}
+          height={180}
+          priority
         />
       </CardHeader>
       <CardBody>
@@ -69,13 +70,16 @@ const CompanyCard = (props) => {
               </button>
             </div>
           </span>
-          <button
-            type="button"
-            onClick={() => setDialog(true)}
-            className="mt-2 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-          >
-            Read More
-          </button>
+          <div >
+            <button
+              type="button"
+              onClick={() => setDialog(true)}
+              className="mt-2 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+            >
+              Read More
+            </button>
+            <Link href={props.link} style={{color:"blue", borderBottom:"1px solid blue",  marginLeft:"10rem"}}>Visit</Link>
+          </div>
         </div>
       </CardFooter>
     </Card>

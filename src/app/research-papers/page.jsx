@@ -24,7 +24,6 @@ export default function ResearchPapersPage() {
       );
       const data = await response.json();
       setData(data.result);
-      console.log("data : ", data);
     };
 
     fetchData();
@@ -32,9 +31,10 @@ export default function ResearchPapersPage() {
   return (
     <div>
     <div style={{display:"flex",justifyContent:"center"}}>
-      <h1 className={`ml-10 ${styles.prevent_select} mt-3`} >
+      <h1 className={`ml-10 ${styles.prevent_select} mt-3`}  >
         Articles and Papers {" "}
       </h1>
+      <div style={{position:"absolute", right:"-1100px", top:"10px"}}>Total Articles : {data.length}</div>
     </div>
       <div className={`${styles.body}`}>
         <div className={`${styles.container} ${styles.header}`}>

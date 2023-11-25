@@ -10,7 +10,12 @@ const SoftwareItem = (props) => {
       <input type="checkbox" checked={chkValue} className={`${styles.checkbox}`} onChange={()=>setChkValue(!chkValue)}/>
       </div>
       <div className={`${styles.grid_item}`}>{props.name}</div>
-      <div className={`${styles.grid_item}`}>{props.description}</div>
+      <div className={`${styles.grid_item} ${styles.tooltip}`}>
+        <span className={`${styles.tooltiptext}`}>{props.description}</span>
+        {props.description.length > 42
+          ? `${props.description.substr(0, 42)}...`
+          : props.description}
+      </div>
       <div className={`${styles.grid_item}`}>
         <a href={props.link}>
           <button

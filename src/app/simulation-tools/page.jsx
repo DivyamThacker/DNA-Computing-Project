@@ -23,6 +23,7 @@ export default function ToolsPage(){
   return (
     <div>
       <h1 className="ml-10 mt-3">Simulation and Tools Page </h1>
+      <div style={{position:"absolute", right:"-1100px", top:"10px"}}>Total Simulation tools : {data.length}</div>
       <div className={`${styles.body}`}>
         <div className={`${styles.container} ${styles.header}`}>
           <div className={`${styles.grid_item}`}>

@@ -23,6 +23,7 @@ export default function SoftwarePage(){
   return (
     <div>
       <h1 className="ml-10 mt-3">Software and Tools Page </h1>
+      <div style={{position:"absolute", right:"-1100px", top:"10px"}}>Total Softwares : {data.length}</div>
       <div className={`${styles.body}`}>
         <div className={`${styles.container} ${styles.header}`}>
           <div className={`${styles.grid_item}`}>
